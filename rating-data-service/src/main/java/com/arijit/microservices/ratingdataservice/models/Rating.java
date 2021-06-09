@@ -1,13 +1,15 @@
 package com.arijit.microservices.ratingdataservice.models;
 
+import java.util.List;
+
 public class Rating {
-	
 	private String movieId;
-	private double rating;
+	
+	private List<Double> rating;
 	
 	public Rating() {}
 
-	public Rating(String movieId, double rating) {
+	public Rating(String movieId, List<Double> rating) {
 		super();
 		this.movieId = movieId;
 		this.rating = rating;
@@ -17,9 +19,9 @@ public class Rating {
 
 	public void setMovieId(String movieId) { this.movieId = movieId; }
 
-	public double getRating() { return rating; }
+	public List<Double> getRating() { return rating; }
 
-	public void setRating(double rating) { this.rating = rating; }
+	public void setRating(List<Double> rating) { this.rating = rating; }
 
 	@Override
 	public String toString() { return "Rating [movieId=" + movieId + ", rating=" + rating + "]"; }	

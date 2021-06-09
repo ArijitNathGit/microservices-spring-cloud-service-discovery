@@ -4,3 +4,22 @@ server:
 spring:
   application:
     name: rating-data-service
+
+  datasource:
+    url: jdbc://mongoserver/ratings
+
+    
+#  data:
+#    mongodb:
+#      host: mongoserver
+#      port: 27017
+#      database: ratings
+#      uri: mongodb://localhost/test
+
+
+  data:
+    mongodb:
+      authentication-database: ratings
+      database: ratings
+      port: 27017
+      host: localhost
