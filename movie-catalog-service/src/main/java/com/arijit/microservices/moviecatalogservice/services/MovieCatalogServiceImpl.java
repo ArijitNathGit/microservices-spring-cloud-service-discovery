@@ -34,8 +34,6 @@ public class MovieCatalogServiceImpl implements MovieCatalogService {
 			})
 			.collect(Collectors.toList());
 		
-		
-		
 		UserRating allRatings = new UserRating();
 		allRatings.setUserRatings(userRatings);
 		
