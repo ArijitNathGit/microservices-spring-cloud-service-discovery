@@ -123,3 +123,6 @@ The code structure for the project has it's motivation in Uncle Bob's Clean Arch
 - Business Logic - This layer will act as the business process handler. It decides and uses Repository layer accordingly.
 - Controller - This acts as the presenter to the outer world. Contacts Usecase layer to respond to API calls.
 
+
+![Design](./design.jpg)
+
